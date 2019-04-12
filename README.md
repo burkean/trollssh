@@ -15,10 +15,11 @@ client's terminal.
 
 Using `python 3.7` only.
 
-```bash
+```
 $ pipenv --python 3.7
 $ pipenv sync
-$ pipenv run server```
+$ pipenv run server
+```
 
 The Python package `cryptography` is held back to version `2.4.2` to
 avoid deprecation warnings. Fixes are pending release in Paramiko's
