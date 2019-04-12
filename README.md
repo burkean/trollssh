@@ -29,3 +29,16 @@ master.
 
 Configured through environmental variables. Pipenv optionally reads a
 `.env` in the root of the project directory.
+
+```
+ADDRESS=''
+PORT=22
+HOST_KEY='/path/to/key.rsa.pub'
+```
+
+Paramiko hasn't quite caught up reading the newer ssh key format. You
+can generate a working key pair with:
+
+```
+ssh-keygen -f pass.rsa -t rsa -N '' -m pem
+```
